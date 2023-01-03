@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),url("/Projects/images/Travel/Agra.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* animation-delay: 5s; */
+    animation: backimage 80s infinite;
+    /* animation-fill-mode: backwards; */
+    /* overflow: hidden; */
+}
+nav {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: sticky;
+    text-transform: uppercase;
+}
+.logo {
+    font-size: 40px;
+    font-weight: 600;
+    width: 30%;
+    text-align: center;
+    letter-spacing: 2px;   
+    color: #323232ae;
+    text-shadow: 3px 3px 2px rgb(253, 250, 250), -2px -2px 2px rgb(245, 138, 138);
+}
+.menu {
+    display: flex;
+    width: 40%;
+}
+.menu a {
+    width: 20%;
+    text-decoration: none;
+    color: #FCFDF2;
+    font-size: bold;  
+    text-align: center;
+    transition: 8s all;
+}
+.menu a:hover {
+  color: red;
+}
+.menu a::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: width .5;
+}
+.menu a:hover::after{
+    width: 100%;
+    transition: width .8s;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+ justify-content: center;
+    text-align: center;
+}
+section h3{
+    font-size: 50px;
+    font-weight: 700;
+    color:#FCFDF2 ;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px  2px rgb(12, 12, 12);
+}
+section h1{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #f9f9f5e7;
+    text-shadow: 2px 2px 2px #6a6969,-2px -2px 2px#fef2e5; 
+}
+section p{
+    font-size: 35px;
+    font-weight: 400;
+    color:#FCFDF2 ;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px  2px rgb(12, 12, 12);
+}
+section a{
+    padding: 20px 40px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#FCFDF2 ;
+    transition: 2s;
+}
+section .btnone{
+background-color: rgb(66, 65, 65);
+margin-right: 30px;
+}
+section .btntwo{
+    background-color: rgb(66, 65, 65);
+}
+section .btnone:hover{
+    background-color: rgb(103, 209, 103);
+    box-shadow: 3px 3px 2px rgb(253, 250, 250);
+}
+section .btntwo:hover{
+    background-color: rgb(103, 209, 103);
+    box-shadow: 3px 3px 2px rgb(253, 250, 250);
+}
+.changetext:after{
+    content: " ";
+    animation: changetext 80s infinite linear;
+    color: rgb(103, 209, 103);
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 2px rgb(253, 250, 250);
+}
+
+@keyframes changetext{
+    0%{ content: "Agra";}
+    10%{ content: "srinagar";}
+    20%{ content: "Alleppey";}
+    30%{ content: "Amritsar";}
+    40%{ content: "Andaman";}
+    50%{ content: "Darjeeling";}
+    60%{ content: "goa";}
+    70%{ content: "Jaipur";}
+    80%{ content: "Kolkata";}
+    90%{ content: "Lakshadweep";}
+    100%{ content: "Udaipur";}
+}
+@keyframes backimage {
+    /* 0% {
+        background-image: url(/images/Travel/Agra.jpg);
+    } */
+
+    10% {
+        background-image: url(/Projects/images/Travel/srinagar.jpg);
+    }
+
+    20% {
+        background-image: url(/Projects/images/Travel/Alleppey.jpg);
+    }
+
+    30% {
+        background-image: url(/Projects/images/Travel/Amritsar.jpg);
+    }
+
+    40% {
+        background-image: url(/Projects/images/Travel/beach-sea-water-nature-boat-river-456742-pxhere.com.jpg);
+    }
+
+    50% {
+        background-image: url(/Projects/images/Travel/Darjeeling.webp);
+    }
+
+    60% {
+        background-image: url(/Projects/images/Travel/goa.jpg);
+    }
+
+    70% {
+        background-image: url(/Projects/images/Travel/Jaipur.jpg);
+    }
+
+    80% {
+        background-image: url(/Projects/images/Travel/Kolkata.jpg);
+    }
+
+    90% {
+        background-image: url(/Projects/images/Travel/Lakshadweep.jpg);
+    }
+
+    100% {
+        background-image: url(/Projects/images/Travel/Udaipur.jpg);
+    }
+
+}
